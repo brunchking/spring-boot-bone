@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Test from './Components/Test';
 import reportWebVitals from './reportWebVitals';
 import 'react-bootstrap'
+import './index.css';
+import App from './App';
+import MyNavbar from './components/MyNavbar';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Test />
+    <MyNavbar />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

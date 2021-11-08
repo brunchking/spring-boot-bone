@@ -42,17 +42,17 @@ class MyNavbar extends Component {
                         height="30"
                         className="d-inline-block align-top"
                     />
-                    {' Aiden'}
+                    {'Evolution'}
                 </NavbarBrand>
-                <NavbarToggler onClick={this.toogleNavbar} className="mr-2"/>
+                <NavbarToggler onClick={this.toogleNavbar} className="mr-2" />
                 <Collapse isOpen={!this.state.collapse} navbar>
                     <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="https://ithelp.ithome.com.tw/users/20119510/articles">關於我</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/AidenYang12345">GitHub</NavLink>
-                            </NavItem>
+                        <NavItem>
+                            <NavLink href="/login">Sign in</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/signup">Sign up</NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar >
