@@ -9,14 +9,14 @@ import {
 import FrontPage from './components/FrontPage';
 import Member from './components/Member';
 import Login from './components/Login';
-import SignUp from './components/Signup';
+import Signup from './components/Signup';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/signin' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
