@@ -89,8 +89,9 @@ function PersonalInfoForm() {
                     <Button type="submit">Submit form</Button>
                 </Form>
             </Container>
-        </div >
+        </div>
     );
+
 }
 
 

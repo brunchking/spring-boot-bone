@@ -10,6 +10,7 @@ import FrontPage from './components/FrontPage';
 import Member from './components/Member';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import PersonalInfoForm from './components/PersonalInfoForm';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/signin' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/personalInfoForm' element={<PersonalInfoForm />} />
       </Routes>
     </BrowserRouter>
   );
