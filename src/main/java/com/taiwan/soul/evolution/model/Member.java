@@ -2,13 +2,28 @@ package com.taiwan.soul.evolution.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Member")
 public class Member {
+	@Id
+	@Column(name="MID")
 	private String mid;
+	@Column(name="EMAIL")
 	private String email;
+	@Column(name="PASSWORD")
 	private String password;
+	@Column(name="FIRST_NAME")
 	private String firstName;
+	@Column(name="LAST_NAME")
 	private String lastName;
+	@Column(name="CREATE_TIME")
 	private Date createTime;
+	@Column(name="UPDATE_TIME")
 	private Date updateTime;
 
 	public String getMid() {

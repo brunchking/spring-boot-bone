@@ -16,6 +16,7 @@ public class IndexController {
 		return "index";
 	}
 	
+	
 	@GetMapping(value = "/thymeleaf-test")
 	public String thymeleafTest(Model model, @RequestParam("name") String name) {
 		model.addAttribute("name", name);

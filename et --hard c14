@@ -1,0 +1,53 @@
+[33mcommit 38a8c7f10cf7107a12f5b718518270dcfccd7dcb[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Thu Nov 11 22:37:11 2021 +0800
+
+    add postgresql db connection & react form
+
+[33mcommit bd60015affb03eb4798f75eb386bba1e48aa2403[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Wed Nov 10 22:47:41 2021 +0800
+
+    first commit
+
+[33mcommit 388c77356d294a69d26607c80b475313e9b55294[m[33m ([m[1;31morigin/react-test[m[33m)[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Tue Nov 9 21:39:09 2021 +0800
+
+    add /personalInfoFrom
+
+[33mcommit 578825fecec4069dd7a85d734581d1ce2ad09653[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Mon Nov 8 22:16:55 2021 +0800
+
+    add backend SignupController
+
+[33mcommit 8c86b084d739ecbdcdc8297848797e3e8edc330e[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Mon Nov 8 21:57:29 2021 +0800
+
+    add /login and /signup
+
+[33mcommit 50a96278f28d8d2327d249e64c91e3e0164eb88d[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Sun Nov 7 21:54:05 2021 +0800
+
+    react-beginner
+
+[33mcommit d593451393c26e90baeffea13fb40da4fb32bb49[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Sun Nov 7 21:48:08 2021 +0800
+
+    react-beginner
+
+[33mcommit 667f9f113e817d47eff47419e41c91732889601f[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Sun Nov 7 14:55:43 2021 +0800
+
+    react-test
+
+[33mcommit 3b382c43690c7d7b33b2eecc66105d41d4c1723d[m
+Author: brunchking <francis545@yahoo.com.tw>
+Date:   Sun Nov 7 13:59:35 2021 +0800
+
+    first commit
