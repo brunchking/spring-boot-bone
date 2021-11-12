@@ -6,7 +6,6 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import FrontPage from './components/FrontPage';
 import Member from './components/Member';
 import Login from './components/Login';
 import Signup from './components/Signup';

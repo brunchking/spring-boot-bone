@@ -1,36 +1,42 @@
 import React, { Component } from "react";
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 
 class Signup extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { user: [] };
+        this.state = {
+            email: "",
+            password: "",
+            firstName: "",
+            lastName: ""
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentDidMount() {
-		fetch('api/signup').then(response => response.json())
-			.then(data => this.setState({ members: data }));
-	}
+    handleChange(event) {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit() {
+        console.log('test');
+        fetch('api/signup', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(this.state)
+        }).then(response => response.json())
+            .then(data => this.setState({ members: data }));
+    }
 
     render() {
         return (
             <div>
                 <Container fluid>
-<<<<<<< Updated upstream
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" />
-=======
                     <Form onSubmit={this.handleSubmit}>
                         <Row>
                             <Form.Group as={Col} md="4" controlId="formBasicEmail">
@@ -93,7 +99,6 @@ class Signup extends Component {
                                 feedback="You must agree before submitting."
                                 feedbackType="invalid"
                             />
->>>>>>> Stashed changes
                         </Form.Group>
                         <Button variant="primary" type="submit">
                             Submit
