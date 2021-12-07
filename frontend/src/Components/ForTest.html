@@ -10,18 +10,10 @@
 
 <body>
     <script>
-        function formatName(user) {
-            return user.lastName + ' ' + user.firstName;
+        function func1(func2) {
+            return func2();
         }
-
-        const user = {
-            firstName: '王',
-            lastName: '小明',
-        };
-
-        const element = <h1>你好, {formatName(user)}!</h1>;
-
-        ReactDOM.render(element, document.getElementById('root'));
+        console.log(func1(() =>  "test"));
     </script>
 </body>
 
